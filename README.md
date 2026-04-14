@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Low Chrome Mill Ball Casting Simulation
 
 1D finite difference simulation of solidification in spherical mill balls.
@@ -39,3 +40,4 @@ Activate your virtual environment and run:
 ```bash
 source .venv/Scripts/activate
 python -c "from src.grid import create_grid; r, dr, dt = create_grid(100, 40); print(f'dr = {dr*1000:.3f} mm, dt = {dt:.4f} s')"
+

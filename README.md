@@ -1,43 +1,38 @@
-<<<<<<< HEAD
-# Low Chrome Mill Ball Casting Simulation
+# Low-Chrome White Cast Iron Mill Ball Solidification Simulation
 
-1D finite difference simulation of solidification in spherical mill balls.
+A physics-informed 1D radial finite difference model for predicting 
+solidification behaviour and casting defect risk in low-chromium white 
+cast iron grinding balls (60–120 mm) in a permanent metal mould.
 
-## Setup
-1. Clone the repository.
-2. Create a virtual environment and activate it.
-3. Install dependencies: `pip install numpy matplotlib pandas`
-4. Run simulations from `src/` (to be implemented).
+## Quick Start — Run in Browser (No Installation Required)
 
-## Configuration
-Edit `config.py` to change material properties and default parameters.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOURGITHUBUSERNAME/YOURREPONAME/blob/main/notebook.ipynb)
 
-# Day 2 – Geometry Module & Grid Setup
+Click the badge above. No Python installation needed.
 
-## What we did
+## What the Simulation Does
 
-We built the **grid module** that divides the mill ball into 40 radial slices from the center to the surface.  
-This module calculates:
+- Solves the 1D radial heat equation using backward-Euler FDM (N=40 nodes)
+- Models two-stage latent heat release (primary + eutectic)
+- Predicts four casting defect risk indices: Misrun, Cold Shut, 
+  Surface Cracking, and Warpage
+- Runs a 400-scenario parameter sweep over T_pour, T_mold, and diameter
+- Produces GP response surfaces, RF sensitivity analysis, and 
+  composite risk heatmaps
 
-- `r` – radial positions (meters) of each node
-- `dr` – distance between two neighboring nodes (spatial step)
-- `dt` – stable time step (seconds) based on the Von Neumann stability criterion
+## Ball Sizes
 
-All numbers come from the central configuration file (`config.py`).
+60 mm | 80 mm | 100 mm | 120 mm
 
----
+## Alloy
 
-## Files created
+Low-chrome white cast iron: ~3 wt% C, 1–3 wt% Cr
 
-- `src/grid.py` – contains the `create_grid()` function
+## Module
 
----
+Module L99 — Computational Casting Engineering
 
-## How to test the module
+## Dependencies
 
-Activate your virtual environment and run:
-
-```bash
-source .venv/Scripts/activate
-python -c "from src.grid import create_grid; r, dr, dt = create_grid(100, 40); print(f'dr = {dr*1000:.3f} mm, dt = {dt:.4f} s')"
-
+See requirements.txt. All open-source (NumPy, Matplotlib, Pandas, 
+scikit-learn, SciPy).

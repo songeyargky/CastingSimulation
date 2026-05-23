@@ -6,7 +6,7 @@ cast iron grinding balls (60–120 mm) in a permanent metal mould.
 
 ## Quick Start — Run in Browser (No Installation Required)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOURGITHUBUSERNAME/YOURREPONAME/blob/main/notebook.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songeyargky/CastingSimulation/blob/main/notebook.ipynb)
 
 Click the badge above. No Python installation needed.
 

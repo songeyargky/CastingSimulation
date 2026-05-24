@@ -36,3 +36,6 @@ Module L99 — Computational Casting Engineering
 
 See requirements.txt. All open-source (NumPy, Matplotlib, Pandas, 
 scikit-learn, SciPy).
+
+## Live Web Application
+https://castingsimulation-jc8rybquyjkzfxbfd7tdex.streamlit.app/

@@ -16,7 +16,7 @@ Click the badge above. No Python installation needed.
 - Models two-stage latent heat release (primary + eutectic)
 - Predicts four casting defect risk indices: Misrun, Cold Shut, 
   Surface Cracking, and Warpage
-- Runs a 400-scenario parameter sweep over T_pour, T_mold, and diameter
+- Runs a 1000-scenario parameter sweep over T_pour, T_mold, and diameter
 - Produces GP response surfaces, RF sensitivity analysis, and 
   composite risk heatmaps
 

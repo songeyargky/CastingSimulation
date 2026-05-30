@@ -113,7 +113,7 @@ elif preset == "risk":
 # ── Main page header ──────────────────────────────────────────────
 st.title("⬡  Low-Chrome Mill Ball Solidification Simulation")
 st.markdown(
-    "**Module L99** &nbsp;|&nbsp; 1D Radial FDM &nbsp;|&nbsp; "
+    "**MS** &nbsp;|&nbsp; 1D Radial FDM &nbsp;|&nbsp; "
     "Backward-Euler Implicit Solver &nbsp;|&nbsp; N = 40 Nodes &nbsp;|&nbsp; "
     "Permanent Metal Mould &nbsp;|&nbsp; Low-Cr White Cast Iron"
 )

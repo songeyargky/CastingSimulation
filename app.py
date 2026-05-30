@@ -121,7 +121,7 @@ st.markdown("---")
 
 # ── Parameter summary strip ───────────────────────────────────────
 c1, c2, c3, c4, c5 = st.columns(5)
-c1.metric("T_pour", f"{T_pour} °C", delta=f"{T_pour - 1250} K superheat")
+c1.metric("T_pour", f"{T_pour} °C", delta=f"{T_pour - 1250} ℃ superheat")
 c2.metric("T_mold",  f"{T_mold} °C")
 c3.metric("Diameter", f"{diameter} mm")
 c4.metric("h_initial", f"{h_initial} W/m²K")
